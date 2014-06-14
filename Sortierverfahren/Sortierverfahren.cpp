@@ -58,7 +58,7 @@ int _tmain(int argc, _TCHAR* argv[])
 	} while (moreSortersMenu.executeForceValid(cout, cin));
 
 	//sort data...
-	cout << endl << endl;//<< setprecision(8);
+	cout << endl << endl;
 
 	for (dataSets.iteratorInit(); !dataSets.iteratorIsFinished(); dataSets.iteratorNext())
 	{

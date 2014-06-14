@@ -5,6 +5,11 @@
 #include "RandomDataGenerator.cpp"
 #include "RandomRangeDataGenerator.h"
 #include "RandomRangeDataGenerator.cpp"
+#include "AscendingNumbersDataGenerator.h"
+#include "AscendingNumbersDataGenerator.cpp"
+#include "DescendingNumbersDataGenerator.h"
+#include "DescendingNumbersDataGenerator.cpp"
+
 
 //---- Konstruktor / Dekonstruktor ------------------------------------
 
@@ -23,10 +28,12 @@ DataGeneratorMenu<dataType>::~DataGeneratorMenu()
 template <class dataType>
 char** DataGeneratorMenu<dataType>::getEntries(unsigned int& entriesCount) const
 {
-	entriesCount = 2;
+	entriesCount = 4;
 	char** menu = (char**)malloc(entriesCount * sizeof(char*));
 	menu[0] = _strdup("Random numbers");
 	menu[1] = _strdup("Random numbers between a and b");
+	menu[2] = _strdup("Ascending list of numbers");
+	menu[3] = _strdup("Descending list of numbers");
 	return menu;
 }
 
@@ -40,6 +47,12 @@ DataGenerator<dataType>* DataGeneratorMenu<dataType>::getResultForSelectedIndex(
 		break;
 	case 1:
 		return new RandomRangeDataGenerator<dataType>();
+		break;
+	case 2:
+		return new AscendingNumbersDataGenerator<dataType>();
+		break;
+	case 3:
+		return new DescendingNumbersDataGenerator<dataType>();
 		break;
 	default:
 		throw 0;

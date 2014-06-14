@@ -87,6 +87,15 @@
     <ClInclude Include="AddSorterQuestionMenu.h">
       <Filter>Headerdateien\Menüs</Filter>
     </ClInclude>
+    <ClInclude Include="AscendingNumbersDataGenerator.h">
+      <Filter>Headerdateien\Datageneratoren</Filter>
+    </ClInclude>
+    <ClInclude Include="DescendingNumbersDataGenerator.h">
+      <Filter>Headerdateien\Datageneratoren</Filter>
+    </ClInclude>
+    <ClInclude Include="QuickSorter.h">
+      <Filter>Headerdateien\Sortieralgorithmen</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
@@ -144,6 +153,15 @@
       <Filter>Quelldateien</Filter>
     </ClCompile>
     <ClCompile Include="AddSorterQuestionMenu.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="AscendingNumbersDataGenerator.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="DescendingNumbersDataGenerator.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="QuickSorter.cpp">
       <Filter>Quelldateien</Filter>
     </ClCompile>
   </ItemGroup>

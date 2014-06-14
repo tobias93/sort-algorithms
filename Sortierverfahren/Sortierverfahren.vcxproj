@@ -81,10 +81,12 @@
   <ItemGroup>
     <ClInclude Include="AddDataSetQuestionMenu.h" />
     <ClInclude Include="AddSorterQuestionMenu.h" />
+    <ClInclude Include="AscendingNumbersDataGenerator.h" />
     <ClInclude Include="BubbleSorter.h" />
     <ClInclude Include="DataArray.h" />
     <ClInclude Include="DataGenerator.h" />
     <ClInclude Include="DataGeneratorMenu.h" />
+    <ClInclude Include="DescendingNumbersDataGenerator.h" />
     <ClInclude Include="DumbSorter.h" />
     <ClInclude Include="InsertionSorter.h" />
     <ClInclude Include="Menu.h">
@@ -92,6 +94,7 @@
     </ClInclude>
     <ClInclude Include="MergeSorter.h" />
     <ClInclude Include="NamedLinkedList.h" />
+    <ClInclude Include="QuickSorter.h" />
     <ClInclude Include="RandomDataGenerator.h" />
     <ClInclude Include="RandomRangeDataGenerator.h" />
     <ClInclude Include="resource.h" />
@@ -105,10 +108,12 @@
   <ItemGroup>
     <ClCompile Include="AddDataSetQuestionMenu.cpp" />
     <ClCompile Include="AddSorterQuestionMenu.cpp" />
+    <ClCompile Include="AscendingNumbersDataGenerator.cpp" />
     <ClCompile Include="BubbleSorter.cpp" />
     <ClCompile Include="DataArray.cpp" />
     <ClCompile Include="DataGenerator.cpp" />
     <ClCompile Include="DataGeneratorMenu.cpp" />
+    <ClCompile Include="DescendingNumbersDataGenerator.cpp" />
     <ClCompile Include="DumbSorter.cpp" />
     <ClCompile Include="InsertionSorter.cpp" />
     <ClCompile Include="Menu.cpp">
@@ -116,6 +121,7 @@
     </ClCompile>
     <ClCompile Include="MergeSorter.cpp" />
     <ClCompile Include="NamedLinkedList.cpp" />
+    <ClCompile Include="QuickSorter.cpp" />
     <ClCompile Include="RandomDataGenerator.cpp" />
     <ClCompile Include="RandomRangeDataGenerator.cpp" />
     <ClCompile Include="SelectionSorter.cpp" />

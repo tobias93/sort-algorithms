@@ -35,6 +35,11 @@ void BubbleSorter<sortType>::sort(DataArray<sortType>& data)
 	this->resetPerformenceCounters();
 	unsigned int len = data.getLength();
 
+	if (len == 0)
+	{
+		return;
+	}
+
 	for (unsigned int i = len - 1; i > 0; i--)
 	{
 		for (unsigned int j = 0; j < i; j++)

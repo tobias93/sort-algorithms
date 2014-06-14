@@ -29,6 +29,11 @@ void SelectionSorter<sortType>::sort(DataArray<sortType>& data)
 	*/
 	this->resetPerformenceCounters();
 
+	if (data.getLength() == 0)
+	{
+		return;
+	}
+
 	for (unsigned int i = 0; i < data.getLength() - 1; i++)
 	{
 
