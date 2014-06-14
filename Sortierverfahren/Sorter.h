@@ -20,6 +20,7 @@ protected:
 	void countWrites(unsigned int count = 1);
 public:
 	Sorter();
+	virtual ~Sorter() {};
 	unsigned int getNumberOfCompares() const;
 	unsigned int getNumberOfWrites() const;
 	double getTime() const;

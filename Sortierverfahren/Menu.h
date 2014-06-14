@@ -26,7 +26,7 @@ protected:
 public:
 	//Konstruktor / Destruktor
 	Menu();
-	~Menu();
+	virtual ~Menu();
 
 	//Methoden
 	void display(ostream&);

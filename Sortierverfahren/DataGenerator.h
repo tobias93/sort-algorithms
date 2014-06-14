@@ -12,7 +12,7 @@ private:
 	unsigned int count;
 public:
 	DataGenerator();
-	~DataGenerator();
+	virtual ~DataGenerator();
 	void setCount(unsigned int);
 	unsigned int getCount() const;
 	virtual DataArray<dataType> generate();
