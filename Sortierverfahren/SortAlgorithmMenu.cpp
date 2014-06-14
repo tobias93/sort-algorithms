@@ -13,6 +13,8 @@
 #include "MergeSorter.cpp"
 #include "QuickSorter.h"
 #include "QuickSorter.cpp"
+#include "BucketSorter.h"
+#include "BucketSorter.cpp"
 
 
 
@@ -31,13 +33,14 @@ SortAlgorithmMenu<sortType>::~SortAlgorithmMenu()
 template<class sortType>
 char** SortAlgorithmMenu<sortType>::getEntries(unsigned int& entriesCount) const
 {
-	entriesCount = 5;
+	entriesCount = 6;
 	char** menu = (char**)malloc(entriesCount * sizeof(char*));
 	menu[0] = _strdup("Bubble Sort");
 	menu[1] = _strdup("Insertion Sort");
 	menu[2] = _strdup("Selection Sort");
 	menu[3] = _strdup("Merge Sort");
 	menu[4] = _strdup("Quick Sort");
+	menu[5] = _strdup("Bucket Sort");
 	return menu;
 }
 
@@ -60,6 +63,10 @@ Sorter<sortType>* SortAlgorithmMenu<sortType>::getResultForSelectedIndex(unsigne
 		break;
 	case 4:
 		return new QuickSorter<sortType>();
+		break;
+	case 5:
+		return new BucketSorter<sortType>();
+		break;
 	default:
 		throw 0;
 	}

@@ -83,6 +83,7 @@
     <ClInclude Include="AddSorterQuestionMenu.h" />
     <ClInclude Include="AscendingNumbersDataGenerator.h" />
     <ClInclude Include="BubbleSorter.h" />
+    <ClInclude Include="BucketSorter.h" />
     <ClInclude Include="DataArray.h" />
     <ClInclude Include="DataGenerator.h" />
     <ClInclude Include="DataGeneratorMenu.h" />
@@ -110,6 +111,7 @@
     <ClCompile Include="AddSorterQuestionMenu.cpp" />
     <ClCompile Include="AscendingNumbersDataGenerator.cpp" />
     <ClCompile Include="BubbleSorter.cpp" />
+    <ClCompile Include="BucketSorter.cpp" />
     <ClCompile Include="DataArray.cpp" />
     <ClCompile Include="DataGenerator.cpp" />
     <ClCompile Include="DataGeneratorMenu.cpp" />
