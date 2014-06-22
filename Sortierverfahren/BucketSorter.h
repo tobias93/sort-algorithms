@@ -21,4 +21,3 @@ public:
 	void sort(DataArray<sortType>&);
 	void configureInteractive(ostream&, istream&);
 };
-

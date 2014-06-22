@@ -99,6 +99,9 @@
     <ClInclude Include="BucketSorter.h">
       <Filter>Headerdateien\Sortieralgorithmen</Filter>
     </ClInclude>
+    <ClInclude Include="RadixSorter.h">
+      <Filter>Headerdateien\Sortieralgorithmen</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
@@ -168,6 +171,9 @@
       <Filter>Quelldateien</Filter>
     </ClCompile>
     <ClCompile Include="BucketSorter.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="RadixSorter.cpp">
       <Filter>Quelldateien</Filter>
     </ClCompile>
   </ItemGroup>

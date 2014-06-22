@@ -15,7 +15,8 @@
 #include "QuickSorter.cpp"
 #include "BucketSorter.h"
 #include "BucketSorter.cpp"
-
+#include "RadixSorter.h"
+#include "RadixSorter.cpp"
 
 
 template<class sortType>
@@ -33,7 +34,7 @@ SortAlgorithmMenu<sortType>::~SortAlgorithmMenu()
 template<class sortType>
 char** SortAlgorithmMenu<sortType>::getEntries(unsigned int& entriesCount) const
 {
-	entriesCount = 6;
+	entriesCount = 7;
 	char** menu = (char**)malloc(entriesCount * sizeof(char*));
 	menu[0] = _strdup("Bubble Sort");
 	menu[1] = _strdup("Insertion Sort");
@@ -41,6 +42,7 @@ char** SortAlgorithmMenu<sortType>::getEntries(unsigned int& entriesCount) const
 	menu[3] = _strdup("Merge Sort");
 	menu[4] = _strdup("Quick Sort");
 	menu[5] = _strdup("Bucket Sort");
+	menu[6] = _strdup("Radix Sort");
 	return menu;
 }
 
@@ -66,6 +68,9 @@ Sorter<sortType>* SortAlgorithmMenu<sortType>::getResultForSelectedIndex(unsigne
 		break;
 	case 5:
 		return new BucketSorter<sortType>();
+		break;
+	case 6:
+		return new RadixSorter<sortType>();
 		break;
 	default:
 		throw 0;

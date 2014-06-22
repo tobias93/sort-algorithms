@@ -96,6 +96,7 @@
     <ClInclude Include="MergeSorter.h" />
     <ClInclude Include="NamedLinkedList.h" />
     <ClInclude Include="QuickSorter.h" />
+    <ClInclude Include="RadixSorter.h" />
     <ClInclude Include="RandomDataGenerator.h" />
     <ClInclude Include="RandomRangeDataGenerator.h" />
     <ClInclude Include="resource.h" />
@@ -124,6 +125,7 @@
     <ClCompile Include="MergeSorter.cpp" />
     <ClCompile Include="NamedLinkedList.cpp" />
     <ClCompile Include="QuickSorter.cpp" />
+    <ClCompile Include="RadixSorter.cpp" />
     <ClCompile Include="RandomDataGenerator.cpp" />
     <ClCompile Include="RandomRangeDataGenerator.cpp" />
     <ClCompile Include="SelectionSorter.cpp" />
